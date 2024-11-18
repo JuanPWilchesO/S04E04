@@ -1,4 +1,5 @@
 import './UserCard.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function UserCard({ user, openEdit, openDelete }) {
   return (
@@ -16,10 +17,10 @@ function UserCard({ user, openEdit, openDelete }) {
       </div>
       <div className='row mx-auto'>
         <div className='btn-group me-2 col'>
-          <button className='row btn btn-primary' onClick={() => openEdit(user)}>Actualizar</button>
+          <button className='row btn btn-primary' onClick={() => openEdit(user)}><i class="bi bi-pencil-square"></i></button>
         </div>
         <div className='btn-group me-2 col'>
-          <button className='row btn btn-danger' onClick={() => openDelete(user)}>Eliminar</button>
+          <button className='row btn btn-danger' onClick={() => openDelete(user)}><i class="bi bi-trash-fill"></i></button>
         </div>
       </div>
     </div>

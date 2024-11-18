@@ -6,6 +6,7 @@ import UserList from "./components/UserList/UserList.jsx"
 import Modal from "./components/Modal/Modal.jsx"
 import DeleteUser from "./components/DeleteUser/DeleteUser.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 
 function App() {
@@ -83,7 +84,8 @@ function App() {
           <h1 className="h1 text-light">Usuarios</h1>
         </div>
         <div>
-          <button className="btn btn-outline-light" onClick={openAdd}>Agregar usuario</button>
+          <button className="btn btn-outline-light" onClick={openAdd}>
+            <i class="bi bi-person-fill-add"></i>  Agregar usuario</button>
         </div>
       </div>
       <div className="container-fluid mt-5 pt-5">
